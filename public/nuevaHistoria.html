@@ -1,0 +1,196 @@
+<div class="container-fluid">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div >
+                            <label class=control-label">Motivo Consulta</label>
+                            <input type="text" class="form-control" name="Nombre" placeholder="Anotar la causa del problema en la version del informamte" />
+                        </div>
+
+                        <div >
+                            <label class="control-label">Enfermedad o Problema Actual</label>
+                            <label class="control-label">Registrar Sintomas</label>
+                            <div class="form-group">
+                                <label for="Cronologia">¿desde cuando o cuantos dias atras se prsenta el dolor?</label>
+                                <input type="Cronologia" class="form-control" id="Cronologia">
+                            </div>
+                            <div class="form-group">
+                                <label for="Localizacion">¿En que lugar se presenta el dolor?:</label>
+                                <input type="Localizacion" class="form-control" id="Localizacion">
+                            </div>
+                            <div class="form-group">
+                                <label for="Caracteristicas">¿Que tipo de dolor siente? Punsatil,continuo,intermitente,punzante,urente(ardor),transsfictivo(taraviesa):</label>
+                                <input type="Caracteristicas" class="form-control" id="Caracteristicas">
+                            </div>
+                            <div class="form-group">
+                                <label for="Intensidad">¿La intensidad del dolor es fuerte,mediano,debil o no presenta dolor?:</label>
+                                <input type="Intensidad" class="form-control" id="Intensidad">
+                            </div>
+                            <div class="form-group">
+                                <label for="Causa">¿El dolor es provocado a los estimulos por frio,calor,dulce u otro?:</label>
+                                <input type="Causa" class="form-control" id="Causa">
+                            </div>
+                            <div class="form-group">
+                                <label for="Sintomas">¿El dolor se irradia al oido,cara,articulacion temporo mandibular,cabeza?</label>
+                                <input type="Sintomas" class="form-control" id="Sintomas">
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <div class="checkbox">
+                                        <label><input type="checkbox"> Paciente Asintomatico(no refiere sintomas)</label>
+                                    </div>
+                                </div>
+
+
+
+                        </div>
+
+
+
+
+
+                                <div class="col-xs-4 selectContainer">
+                                    <label class=control-label">Antecedentes familiares o personales</label>
+                                    <select class="form-control" name="genre">
+                                        <option value="">Ninguno</option>
+                                        <option value="1">1.-Alergia Antibiotico</option>
+                                        <option value="2">2.-Alergia anestesia</option>
+                                        <option value="3">3.-Hemorragias</option>
+                                        <option value="4">4.-vhi/sida</option>
+                                        <option value="5">5.-Tuberculosis</option>
+                                        <option value="6">6.-Asma</option>
+                                        <option value="7">7.-Diabetis</option>
+                                        <option value="8">8.-Hipertension</option>
+                                        <option value="9">9.-Enfermedad Cardica</option>
+                                        <option value="10">10.-Otro</option>
+
+
+                                    </select>
+                                </div>
+
+
+
+                        <textarea class="form-control" name="review" rows="5"></textarea>
+                        <button  class="btn btn-default">Guardar</button>
+
+
+
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Categoria</th>
+                                    <th>Descripcion</th>
+                                    <th>Elimnar</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>ASMA</td>
+                                    <td>departe de madre </td>
+
+                                    <td><button type="button" data-id="1" class="btn btn-default editButton">Eliminar</button></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Hipertencion</td>
+                                    <td>departe de padre </td>
+                                    <td><button type="button" data-id="2" class="btn btn-default editButton">Eliminar</button></td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <label class=control-label">Signos Vitales</label>
+                        <div >
+                            <label class=control-label">Presion Arterial</label>
+                            <input type="text" class="form-control" name="Nombre" placeholder="" />
+                        </div>
+                        <div >
+                            <label class=control-label">Frecuencia Cardiaca</label>
+                            <input type="text" class="form-control" name="Nombre" placeholder="" />
+                        </div>
+                        <div >
+                            <label class=control-label">Temperatura A °C</label>
+                            <input type="text" class="form-control" name="Nombre" placeholder="" />
+                        </div>
+                        <div >
+                            <label class=control-label">Frecuencia de Respiracion Min</label>
+                            <input type="text" class="form-control" name="Nombre" placeholder="" />
+                        </div>
+
+
+
+
+                        <div class="col-xs-4 selectContainer">
+                            <label class=control-label">Examen del Sistema Estomatognatico</label>
+                            <select class="form-control" name="genre">
+                                <option value="">Sin Patologia Aparente</option>
+                                <option value="1">1.-Labioso</option>
+                                <option value="2">2.-Mejillas</option>
+                                <option value="3">3.-Maxilar Superior</option>
+                                <option value="4">4.-Maxilar inferior</option>
+                                <option value="5">5.-Lengua</option>
+                                <option value="6">6.-Paladar</option>
+                                <option value="7">7.-Piso</option>
+                                <option value="8">8.-Carrillos</option>
+                                <option value="9">9.-Glandulas Salivales</option>
+                                <option value="10">10.-Oro Faringe</option>
+                                <option value="10">11.-A.T.M</option>
+                                <option value="10">12.-Ganglios</option>
+
+                            </select>
+                        </div>
+
+
+
+                        <textarea class="form-control" name="review" rows="5"></textarea>
+                        <button  class="btn btn-default">Guardar</button>
+
+
+
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Categoria</th>
+                                    <th>Descripcion</th>
+                                    <th>Elimnar</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Mejillas</td>
+                                    <td>descripcion de la patologia </td>
+
+                                    <td><button type="button" data-id="1" class="btn btn-default editButton">Eliminar</button></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>lengua</td>
+                                    <td>descripcion de la patologia </td>
+                                    <td><button type="button" data-id="2" class="btn btn-default editButton">Eliminar</button></td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+
+</div>

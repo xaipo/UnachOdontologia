@@ -1,13 +1,13 @@
-<div class="clearfix">
+<div >
   <form ng-Submit="post()" ng-show="authenticated">
-    <h4>{{current_user}} says</h4>
+    <h4>{{current_user}} </h4>
     <textarea required class="form-control" maxlength="200" rows="3" placeholder="Say something" ng-model="newPost.text"></textarea>
     <input class="btn submit-btn pull-right" type="submit" value="Chirp!" />
   </form>
 </div>
 
 <div id="post-stream">
-	<h4>se muestar el inicio 
+	<h4>se muestra el inicio 
     </h4>
 		<div class="post" ng-repeat="post in posts | orderBy:'created_at':true" ng-class-odd="'odd'" ng-class-even="'even'"> 
 			<p>{{post.text}}</p>

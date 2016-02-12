@@ -8,6 +8,9 @@ var session = require('express-session');
 var passport = require('passport');
 //initialize mongoose schemas
 require('./models/models');
+require('./models/Tareas');
+
+var tareas = require('./routes/tareas');
 var index = require('./routes/index');
 var api = require('./routes/api');
 var authenticate = require('./routes/authenticate')(passport);
@@ -32,6 +35,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(passport.initialize());
 app.use(passport.session());
 
+
+app.use('/',tareas);
 app.use('/',index);
 app.use('/auth', authenticate);
 app.use('/api', api);

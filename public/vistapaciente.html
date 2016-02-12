@@ -1,0 +1,60 @@
+<div class="container-fluid">
+
+
+   
+
+
+
+
+
+    <div class="table-responsive">
+
+        <table st-table="tareas" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+
+                    <th colspan="5">
+                    
+                        <input type="text" class="form-control" placeholder="busqueda" ng-model="searchFish">
+                    </th>
+                </tr>
+                <tr>
+                    <th>Cedula</th>
+                    <th>Nombre </th>
+                    <th>Apellido</th>
+                     <th>Sexo</th>
+                      <th>Direccion</th>
+                       <th>Contacto de emergencia</th>
+                 
+                </tr>
+
+            </thead>
+            <tbody>
+              
+                <tr ng-repeat="tarea in tareas | filter:searchFish ">
+                    <td>{{tarea.cedula}}</td>
+                    <td>{{tarea.nombre}}</td>
+                    <td>{{tarea.apellido}}</td>
+                    <td>{{tarea.sexo}}</td>
+                    <td>{{tarea.direccion}}</td>
+                      <td>{{tarea.contacto_de_emergencia}}</td>
+                    
+
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
